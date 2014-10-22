@@ -1,0 +1,1423 @@
+{
+ "layout": {
+  "title": "config",
+  "rows": [
+   {
+    "id": "718ebbf9-4751-0404-7e99-2a2221ca9d25",
+    "type": "LayoutResourceFile",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "JSHelpers",
+      "type": "Id"
+     },
+     {
+      "name": "resourceFile",
+      "value": "${system:/static/custom/js/helpers.js}",
+      "type": "ResourceFile"
+     },
+     {
+      "name": "resourceType",
+      "value": "Javascript",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "552fda9d-b0ec-8e33-c69c-5cf8cf36ac54",
+    "type": "LayoutResourceFile",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "CSSGlobal",
+      "type": "Id"
+     },
+     {
+      "name": "resourceFile",
+      "value": "${system:/static/custom/css/global.css}",
+      "type": "ResourceFile"
+     },
+     {
+      "name": "resourceType",
+      "value": "Css",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "ea952d6b-daa4-0a4f-1c5b-bb0be86275ff",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "ReloadRow",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "spacer-40",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "div",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "3c57e3a1-44c7-96ae-155b-253ef5ae2f82",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "ea952d6b-daa4-0a4f-1c5b-bb0be86275ff",
+    "properties": [
+     {
+      "name": "name",
+      "value": "RefreshButton",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "glyphicon glyphicon-refresh pull-right panel-heading cursor-pointer text-info",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "span",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "24b4304d-735d-1fd9-40d4-802857c28cdb",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "Spacer01",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "spacer-10",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "div",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "f995ad4b-85a8-910b-95a9-44004aeacf0a",
+    "type": "BootstrapPanel",
+    "typeDesc": "Bootstrap Panel",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "EnvConfigPanel",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapPanelStyle",
+      "value": "panel-default",
+      "type": "bootstrapPanelStyleCustom"
+     }
+    ]
+   },
+   {
+    "id": "d87eda03-b4a7-1d0e-9344-c3ab882ed8e3",
+    "type": "BootstrapPanelHeader",
+    "typeDesc": "Panel Header",
+    "parent": "f995ad4b-85a8-910b-95a9-44004aeacf0a",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "d38bf5c2-6caf-0d3c-6a77-54b125a27c9e",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "d87eda03-b4a7-1d0e-9344-c3ab882ed8e3",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "Environment config checklist ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "faac7807-99b5-b69d-0793-076dafdd9e26",
+    "type": "BootstrapPanelBody",
+    "typeDesc": "Panel Body",
+    "parent": "f995ad4b-85a8-910b-95a9-44004aeacf0a",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "cg-no-padding",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "b8fc67de-6a0e-2266-c448-e542c29f567d",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "faac7807-99b5-b69d-0793-076dafdd9e26",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "row cg-btn-row-space cg-btn-row-border",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "div",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "b5197a75-a66d-bf5c-7526-71a67600c5d5",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "b8fc67de-6a0e-2266-c448-e542c29f567d",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "col-xs-9 cg-btn-row",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "div",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "689ba921-b1de-2d3e-7944-2b4097133444",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "b5197a75-a66d-bf5c-7526-71a67600c5d5",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "All plugin files installed? ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "44feb106-30ce-0d70-d6a9-d4760cb72084",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "b8fc67de-6a0e-2266-c448-e542c29f567d",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "col-xs-3",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "div",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "395b9aa1-bd6e-fbb1-5a6c-922a394fadc5",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "44feb106-30ce-0d70-d6a9-d4760cb72084",
+    "properties": [
+     {
+      "name": "name",
+      "value": "FilesInstalledStatus",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "btn pull-right",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "button",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[[\"disabled\",\"disabled\"]]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "60d326ab-0d58-2e58-fcad-8b8095e6a6e7",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "395b9aa1-bd6e-fbb1-5a6c-922a394fadc5",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "<span>Loading...</span> ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "7584c243-ccc7-1922-bff1-f5652827f24b",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "395b9aa1-bd6e-fbb1-5a6c-922a394fadc5",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "label glyphicon",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "div",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "947e626c-be64-7ff7-1e26-a81573eaa3fe",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "faac7807-99b5-b69d-0793-076dafdd9e26",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "row cg-btn-row-space",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "div",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "85bbd123-2323-4e76-15f5-1cc7eb0ed544",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "947e626c-be64-7ff7-1e26-a81573eaa3fe",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "col-xs-9 cg-btn-row",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "div",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "24dbc69e-6e7e-5a3b-a45d-e56f0637b087",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "85bbd123-2323-4e76-15f5-1cc7eb0ed544",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "All plugin classes Loaded? ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "6e6bc551-3c4b-33c7-8781-011f830c3e03",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "947e626c-be64-7ff7-1e26-a81573eaa3fe",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "col-xs-3",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "div",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "50ea8252-b681-c327-f9c9-79cc737e84ce",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "6e6bc551-3c4b-33c7-8781-011f830c3e03",
+    "properties": [
+     {
+      "name": "name",
+      "value": "ClassLoadedStatus",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "btn pull-right",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "button",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[[\"disabled\",\"disabled\"]]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "07686d44-5dd7-f616-493f-e5da6245a21a",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "50ea8252-b681-c327-f9c9-79cc737e84ce",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "<span>Loading...</span> ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "b991a366-1ca0-6816-5db8-e15c05287cc6",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "50ea8252-b681-c327-f9c9-79cc737e84ce",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "label glyphicon ",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "div",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "2b188871-463e-57c3-f6cb-b240bde42f5f",
+    "type": "BootstrapPanel",
+    "typeDesc": "Bootstrap Panel",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapPanelStyle",
+      "value": "panel-default",
+      "type": "bootstrapPanelStyleCustom"
+     }
+    ]
+   },
+   {
+    "id": "fd0caed2-8775-a3d6-2226-38b6bec50558",
+    "type": "BootstrapPanelHeader",
+    "typeDesc": "Panel Header",
+    "parent": "2b188871-463e-57c3-f6cb-b240bde42f5f",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "5cb36a4a-e319-f5af-a1bb-f3137645a8d3",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "fd0caed2-8775-a3d6-2226-38b6bec50558",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "Datasources patched with Cubeguard DSP ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "adc1f94e-51d0-287d-67aa-e9e3562d0fee",
+    "type": "BootstrapPanelBody",
+    "typeDesc": "Panel Body",
+    "parent": "2b188871-463e-57c3-f6cb-b240bde42f5f",
+    "properties": [
+     {
+      "name": "name",
+      "value": "AnalysisBody",
+      "type": "Id"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "cg-no-padding",
+      "type": "String"
+     }
+    ]
+   }
+  ]
+ },
+ "components": {
+  "rows": [
+   {
+    "id": "OTHERCOMPONENTS",
+    "name": "Others",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "Others",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "efda456b-8953-7247-ee36-d52521090e1d",
+    "type": "ComponentsQuery",
+    "typeDesc": "Query Component",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "FilesInstalledCheck",
+      "type": "Id"
+     },
+     {
+      "name": "listeners",
+      "value": "['${p:isFilesInstalledTrigger}']",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "resultvar",
+      "value": "${p:isFilesInstalled}",
+      "type": "Result"
+     },
+     {
+      "name": "dataSource",
+      "value": "isFilesInstalledDS",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "refreshPeriod",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "htmlObject",
+      "value": "",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "function(){\n    \n    isFilesInstalled = isFilesInstalled[0][0];\n    \n    var selector = \"#FilesInstalledStatus\",\n        btn = $(selector),\n        icn = $(selector+\" div\"),\n        lbl = $(selector+\" span\");\n        \n    if( isFilesInstalled ){\n        btn.addClass(\"btn-success\")\n           .prop(\"disabled\",\"disabled\");\n        lbl.text(\"OK\");\n        icn.addClass(\"glyphicon-ok\");\n        btn.unbind();\n    }else{\n        btn.addClass(\"btn-warning\")\n           .removeProp( \"disabled\" );\n        lbl.text(\"Not/Bad Installed: click here to fix\");\n        icn.addClass(\"glyphicon-remove\");\n        btn.unbind();\n        btn.click(function(){\n            resetButton();\n            $.ajax({\n                url : \"/pentaho/plugin/cubeguard/api/copylibstowebapp\",\n                dataType : \"json\"\n            })\n            .done(function(data){\n                \n                var rs = data.resultset,\n                    log = \"<h4>Success</h4><hr />\";\n                    \n                for(var x=0;x<rs.length;x++){\n                    log += \"<br /><strong>\"+rs[x][0]+\"</strong>\\t\"+rs[x][1];\n                }\n                \n                createAlert( \"#EnvConfigPanel\" , \"success\" , log);\n            })\n            .fail(function(){\n                createAlert( \"#EnvConfigPanel\",\"danger\",\"There was an error.\"\n                +\" Please check your logs\");\n            })\n            .always(function(){\n                Dashboards.fireChange(\"isFilesInstalledTrigger\",true);\n            });\n            \n        });\n    }\n    \n    Dashboards.fireChange('isFilesInstalled',isFilesInstalled);\n    \n    function resetButton(){\n        btn.unbind()\n           .removeProp( \"disabled\" )\n           .removeClass(\"btn-warning\")\n           .removeClass(\"btn-success\");\n        lbl.text(\"Loading...\");\n        icn.removeClass(\"glyphicon-ok\")\n           .removeClass(\"glyphicon-remove\");\n    }\n    \n}",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "tooltip",
+      "value": "",
+      "type": "Html"
+     }
+    ]
+   },
+   {
+    "id": "b20ecadd-3b04-3f37-29c9-58bc9b6968aa",
+    "type": "ComponentsQuery",
+    "typeDesc": "Query Component",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "ClassLoadedCheck",
+      "type": "Id"
+     },
+     {
+      "name": "listeners",
+      "value": "['${p:isFilesInstalled}']",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "resultvar",
+      "value": "${p:isClassLoaded}",
+      "type": "Result"
+     },
+     {
+      "name": "dataSource",
+      "value": "isClassLoadedDS",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "refreshPeriod",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "htmlObject",
+      "value": "",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "function(){\n    \n    isClassLoaded = isClassLoaded[0][0];\n    \n    var selector = \"#ClassLoadedStatus\",\n        btn = $(selector),\n        icn = $(selector+\" div\"),\n        lbl = $(selector+\" span\");\n        \n    if( isClassLoaded ){\n        btn.addClass(\"btn-success\")\n           .prop(\"disabled\",\"disabled\");\n        lbl.text(\"OK\");\n        icn.addClass(\"glyphicon-ok\");\n    }else if(isFilesInstalled){\n        btn.addClass(\"btn-warning\")\n           .prop(\"disabled\",\"disabled\");\n        lbl.text(\"Class not loaded: You need to restart BA Server\");\n        icn.addClass(\"glyphicon-repeat\");\n    }else{\n        btn.addClass(\"btn-danger\")\n           .prop(\"disabled\",\"disabled\");\n        lbl.text(\"Class not loaded: You first need to install the files\");\n        icn.addClass(\"glyphicon-remove\");\n    }\n    \n    \n}",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "tooltip",
+      "value": "",
+      "type": "Html"
+     }
+    ]
+   },
+   {
+    "id": "fd909bed-ebe9-33ef-1c68-7d2a38e6b3ed",
+    "type": "ComponentsQuery",
+    "typeDesc": "Query Component",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "AnalysisInfoCheck",
+      "type": "Id"
+     },
+     {
+      "name": "listeners",
+      "value": "['${p:isFilesInstalledTrigger}']",
+      "type": "Listeners"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "ValuesArray"
+     },
+     {
+      "name": "resultvar",
+      "value": "${p:analysisInfoRS}",
+      "type": "Result"
+     },
+     {
+      "name": "dataSource",
+      "value": "analysisInfoDS",
+      "type": "Datasource"
+     },
+     {
+      "name": "priority",
+      "value": 5,
+      "type": "Integer"
+     },
+     {
+      "name": "refreshPeriod",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "htmlObject",
+      "value": "",
+      "type": "HtmlObject"
+     },
+     {
+      "name": "executeAtStart",
+      "value": "true",
+      "type": "Boolean"
+     },
+     {
+      "name": "preExecution",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postExecution",
+      "value": "function(){\n    \n    var ai = analysisInfoRS;\n    \n    $(\"#AnalysisBody\").empty();\n    \n    for(var x=0;x<ai.length;x++){\n        \n        var ico = ai[x][1] ? \"ok\" : \"minus\",\n            clr = ai[x][1] ? \"success\" : \"info\",\n            sts = ai[x][1] ? \"Patched\" : \"Not patched\",\n            lne = x == ai.length-1 ? \"\": \"cg-btn-row-border\";\n        \n        var out='<div class=\"row cg-btn-row-space '+lne+'\">'\n           +'  <div class=\"col-xs-9 cg-btn-row\">'+ai[x][0]+'</div>'\n           +'  <div class=\"col-xs-3\">'\n           +'    <button class=\"btn pull-right btn-'+clr+'\" disabled=\"disabled\">'\n           +'      '+sts+' <div class=\"label glyphicon glyphicon-'+ico+'\"></div>'\n           +'    </button>'\n           +'  </div>'\n           +'</div>';\n        $(\"#AnalysisBody\").append(out);\n        \n    }\n    \n    \n}",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postFetch",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "preChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "postChange",
+      "value": "",
+      "type": "JavaScript"
+     },
+     {
+      "name": "tooltip",
+      "value": "",
+      "type": "Html"
+     }
+    ]
+   },
+   {
+    "id": "GENERIC",
+    "name": "Generic",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "Generic",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "851bd9bd-006a-e06a-4922-d234c1230b9d",
+    "type": "ComponentsParameter",
+    "typeDesc": "Simple parameter",
+    "parent": "GENERIC",
+    "properties": [
+     {
+      "name": "name",
+      "value": "isFilesInstalledTrigger",
+      "type": "Id"
+     },
+     {
+      "name": "propertyValue",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
+     },
+     {
+      "name": "bookmarkable",
+      "value": "false",
+      "type": "Boolean"
+     }
+    ]
+   },
+   {
+    "id": "526f2043-c306-7eee-d0d7-0f5529e2191d",
+    "type": "ComponentsParameter",
+    "typeDesc": "Simple parameter",
+    "parent": "GENERIC",
+    "properties": [
+     {
+      "name": "name",
+      "value": "analysisInfoTrigger",
+      "type": "Id"
+     },
+     {
+      "name": "propertyValue",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
+     },
+     {
+      "name": "bookmarkable",
+      "value": "false",
+      "type": "Boolean"
+     }
+    ]
+   },
+   {
+    "id": "ff40faf1-986f-7617-1cac-bba654017ac0",
+    "type": "ComponentsParameter",
+    "typeDesc": "Simple parameter",
+    "parent": "GENERIC",
+    "properties": [
+     {
+      "name": "name",
+      "value": "isFilesInstalled",
+      "type": "Id"
+     },
+     {
+      "name": "propertyValue",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
+     },
+     {
+      "name": "bookmarkable",
+      "value": "false",
+      "type": "Boolean"
+     }
+    ]
+   },
+   {
+    "id": "047ca32e-5691-c382-5205-3966f9345aec",
+    "type": "ComponentsParameter",
+    "typeDesc": "Simple parameter",
+    "parent": "GENERIC",
+    "properties": [
+     {
+      "name": "name",
+      "value": "isClassLoaded",
+      "type": "Id"
+     },
+     {
+      "name": "propertyValue",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
+     },
+     {
+      "name": "bookmarkable",
+      "value": "false",
+      "type": "Boolean"
+     }
+    ]
+   },
+   {
+    "id": "4cb13336-80c7-4927-c06e-2cba4e43ba20",
+    "type": "ComponentsParameter",
+    "typeDesc": "Simple parameter",
+    "parent": "GENERIC",
+    "properties": [
+     {
+      "name": "name",
+      "value": "analysisInfoRS",
+      "type": "Id"
+     },
+     {
+      "name": "propertyValue",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
+     },
+     {
+      "name": "bookmarkable",
+      "value": "false",
+      "type": "Boolean"
+     }
+    ]
+   },
+   {
+    "id": "SCRIPT",
+    "name": "Scripts",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "Scripts",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "91c3501d-6e95-9255-b801-e9dcec2e7c0e",
+    "type": "ComponentsFunction",
+    "typeDesc": "JavaScript function",
+    "parent": "SCRIPT",
+    "properties": [
+     {
+      "name": "name",
+      "value": "JSHandlers",
+      "type": "Id"
+     },
+     {
+      "name": "javaScript",
+      "value": "$(function(){\n   $(\"#RefreshButton\").click(function(){\n       location.reload();\n   });\n});",
+      "type": "JavaScript"
+     }
+    ]
+   }
+  ]
+ },
+ "datasources": {
+  "rows": [
+   {
+    "id": "SQL",
+    "name": "SQL Queries",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "SQL Queries",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "0a56c773-c21a-33cb-c9aa-716d1c31731a",
+    "type": "Componentssql_sqlJndi",
+    "typeDesc": "sql over sqlJndi",
+    "meta": "CDA",
+    "meta_conntype": "sql.jndi",
+    "meta_datype": "sql",
+    "parent": "SQL",
+    "properties": [
+     {
+      "name": "name",
+      "value": "dummy",
+      "type": "Id"
+     },
+     {
+      "name": "access",
+      "value": "public",
+      "type": "Access"
+     },
+     {
+      "name": "jndi",
+      "value": "",
+      "type": "Jndi"
+     },
+     {
+      "name": "query",
+      "value": "",
+      "type": "SqlQuery"
+     },
+     {
+      "name": "parameters",
+      "value": "[]",
+      "type": "CdaParameters"
+     },
+     {
+      "name": "output",
+      "value": "[]",
+      "type": "IndexArray"
+     },
+     {
+      "name": "outputMode",
+      "value": "include",
+      "type": "OutputMode"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cacheDuration",
+      "value": 3600,
+      "type": "Integer"
+     },
+     {
+      "name": "cache",
+      "value": "true",
+      "type": "Boolean"
+     }
+    ]
+   },
+   {
+    "id": "CUBEGUARD_CPKENDPOINTS",
+    "name": "CUBEGUARD Endpoints",
+    "type": "Label",
+    "typeDesc": "<i>Group</i>",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "value": "CUBEGUARD Endpoints",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "39d5f848-7ada-a67d-8a72-08e8b0e8818f",
+    "type": "Componentscubeguard_isFilesInstalled_CPKENDPOINT",
+    "typeDesc": "isFilesInstalled Endpoint",
+    "parent": "CUBEGUARD_CPKENDPOINTS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "isFilesInstalledDS",
+      "type": "Id"
+     },
+     {
+      "name": "stepName",
+      "value": "OUTPUT",
+      "type": "String"
+     },
+     {
+      "name": "kettleOutput",
+      "value": "Json",
+      "type": "kettleOutputCustom"
+     }
+    ],
+    "meta": "CPK",
+    "meta_pluginId": "cubeguard",
+    "meta_endpoint": "isFilesInstalled"
+   },
+   {
+    "id": "4957e9f7-9156-7661-1822-f0b3687e1184",
+    "type": "Componentscubeguard_isClassLoaded_CPKENDPOINT",
+    "typeDesc": "isClassLoaded Endpoint",
+    "parent": "CUBEGUARD_CPKENDPOINTS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "isClassLoadedDS",
+      "type": "Id"
+     },
+     {
+      "name": "stepName",
+      "value": "OUTPUT",
+      "type": "String"
+     },
+     {
+      "name": "kettleOutput",
+      "value": "Json",
+      "type": "kettleOutputCustom"
+     }
+    ],
+    "meta": "CPK",
+    "meta_pluginId": "cubeguard",
+    "meta_endpoint": "isClassLoaded"
+   },
+   {
+    "id": "c42990ab-99df-a509-b7da-6d4d6410594a",
+    "type": "Componentscubeguard_getAnalysisDatasources_CPKENDPOINT",
+    "typeDesc": "getAnalysisDatasources Endpoint",
+    "parent": "CUBEGUARD_CPKENDPOINTS",
+    "properties": [
+     {
+      "name": "name",
+      "value": "analysisInfoDS",
+      "type": "Id"
+     },
+     {
+      "name": "stepName",
+      "value": "OUTPUT",
+      "type": "String"
+     },
+     {
+      "name": "kettleOutput",
+      "value": "Json",
+      "type": "kettleOutputCustom"
+     }
+    ],
+    "meta": "CPK",
+    "meta_pluginId": "cubeguard",
+    "meta_endpoint": "getAnalysisDatasources"
+   }
+  ]
+ },
+ "filename": "/system/cubeguard/dashboards/admin/config.cdfde"
+}

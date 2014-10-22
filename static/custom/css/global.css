@@ -1,0 +1,42 @@
+body {
+  background-color:#D4D7D9;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 200;
+}
+
+
+.panel-heading {
+  font-size:20px;
+}
+
+.cg-btn-row {
+  line-height:34px
+}
+
+.cg-no-padding {
+  padding:0px;
+}
+
+.cg-btn-row-space {
+  padding:10px;
+}
+
+.cg-btn-row-border {
+  border-bottom:solid 1px #D4D7D9;
+}
+
+.spacer-10{
+  height:10px;
+}
+
+.spacer-40{
+  height:40px;
+}
+
+.cursor-pointer{
+  cursor:pointer;
+}
+
+button.btn div.label{
+	display:inline;
+}
