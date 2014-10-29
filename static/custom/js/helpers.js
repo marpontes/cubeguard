@@ -75,7 +75,7 @@ function getToggleDSPParms(params){
  * Changes the analysis parameters on Pentaho to toggle the DSP Param
  */
 function patchAnalysis(btn,analysisId) {
-	if(!confirm("Are you sure you want to enable dynamic security for the "
+	if(!confirm("Are you sure you want to change the dynamic security for the "
 	+"Analysis Schema:\n\t- "+analysisId+"?"))
 		return;
 

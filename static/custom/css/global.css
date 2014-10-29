@@ -4,17 +4,36 @@ body {
   font-weight: 200;
 }
 
+.page-title{
+  line-height:50px;
+  font-size:24px;
+  clear:both;
+  padding-left:15px;
+}
+
+.solid-line{
+	border: solid 1px;
+}
+
+.green-line{
+	border-color:#5cb85c;
+}
 
 .panel-heading {
   font-size:20px;
 }
 
 .cg-btn-row {
-  line-height:34px
+  line-height:34px;
+  text-indent:10px;
 }
 
 .cg-no-padding {
   padding:0px;
+}
+
+.cg-no-margin {
+  margin:0;
 }
 
 .cg-btn-row-space {
@@ -38,5 +57,6 @@ body {
 }
 
 button.btn div.label{
-	display:inline;
+  display:inline;
 }
+

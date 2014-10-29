@@ -49,6 +49,95 @@
     ]
    },
    {
+    "id": "4237eae2-92e9-1bc3-30dc-ee68d27cd38e",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "PageTitle",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "page-title",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "div",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "6cb3cdeb-1fad-52ed-7bb4-e846e786464e",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "4237eae2-92e9-1bc3-30dc-ee68d27cd38e",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "CubeGuard ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "23aa1f25-fadb-0db6-e047-d33f16c28ff0",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "line",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "page-line green-line cg-no-margin",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "hr",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
     "id": "ea952d6b-daa4-0a4f-1c5b-bb0be86275ff",
     "type": "LayoutFreeForm",
     "typeDesc": "FreeForm",
@@ -95,34 +184,6 @@
      {
       "name": "elementTag",
       "value": "span",
-      "type": "String"
-     },
-     {
-      "name": "otherAttributes",
-      "value": "[]",
-      "type": "OptionArray"
-     }
-    ]
-   },
-   {
-    "id": "24b4304d-735d-1fd9-40d4-802857c28cdb",
-    "type": "LayoutFreeForm",
-    "typeDesc": "FreeForm",
-    "parent": "UnIqEiD",
-    "properties": [
-     {
-      "name": "name",
-      "value": "Spacer01",
-      "type": "Id"
-     },
-     {
-      "name": "cssClass",
-      "value": "spacer-10",
-      "type": "String"
-     },
-     {
-      "name": "elementTag",
-      "value": "div",
       "type": "String"
      },
      {
@@ -785,6 +846,62 @@
       "name": "cssClass",
       "value": "cg-no-padding",
       "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "54f1eae4-ff12-cb6f-ca64-80be124c2740",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "OncaseLogo",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "div",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "924b59fd-525c-5b82-4dac-6501fef8cd5d",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "54f1eae4-ff12-cb6f-ca64-80be124c2740",
+    "properties": [
+     {
+      "name": "name",
+      "value": "OncaseLogoIMG",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "page-title",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "img",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[[\"src\",\"/pentaho/plugin/pentaho-cdf-dd/api/resources/system/cubeguard/static/custom/img/oncase-logo.png\"],[\"align\",\"right\"],[\"border\",\"0\"]]",
+      "type": "OptionArray"
      }
     ]
    }
