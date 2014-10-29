@@ -674,7 +674,7 @@
     "properties": [
      {
       "name": "name",
-      "value": "",
+      "value": "DSConfigPanel",
       "type": "Id"
      },
      {
@@ -740,7 +740,7 @@
      },
      {
       "name": "html",
-      "value": "Datasources patched with Cubeguard DSP ",
+      "value": "Datasources using dynamic security ",
       "type": "Html"
      },
      {
@@ -985,7 +985,7 @@
      },
      {
       "name": "listeners",
-      "value": "['${p:isFilesInstalledTrigger}']",
+      "value": "['${p:analysisInfoTrigger}']",
       "type": "Listeners"
      },
      {
@@ -1030,7 +1030,7 @@
      },
      {
       "name": "postExecution",
-      "value": "function(){\n    \n    var ai = analysisInfoRS;\n    \n    $(\"#AnalysisBody\").empty();\n    \n    for(var x=0;x<ai.length;x++){\n        \n        var ico = ai[x][1] ? \"ok\" : \"minus\",\n            clr = ai[x][1] ? \"success\" : \"info\",\n            sts = ai[x][1] ? \"Patched\" : \"Not patched\",\n            lne = x == ai.length-1 ? \"\": \"cg-btn-row-border\";\n        \n        var out='<div class=\"row cg-btn-row-space '+lne+'\">'\n           +'  <div class=\"col-xs-9 cg-btn-row\">'+ai[x][0]+'</div>'\n           +'  <div class=\"col-xs-3\">'\n           +'    <button class=\"btn pull-right btn-'+clr+'\" disabled=\"disabled\">'\n           +'      '+sts+' <div class=\"label glyphicon glyphicon-'+ico+'\"></div>'\n           +'    </button>'\n           +'  </div>'\n           +'</div>';\n        $(\"#AnalysisBody\").append(out);\n        \n    }\n    \n    \n}",
+      "value": "function(){\n    \n    var ai = analysisInfoRS;\n    \n    $(\"#AnalysisBody\").empty();\n    \n    for(var x=0;x<ai.length;x++){\n        \n        var ico = ai[x][1] ? \"ok\" : \"minus\",\n            clr = ai[x][1] ? \"success\" : \"warning\",\n            sts = ai[x][1] ? \"Dynamic\" : \"Not dynamic\",\n            lne = x == ai.length-1 ? \"\": \"cg-btn-row-border\";\n        \n        var out='<div class=\"row cg-btn-row-space '+lne+'\">'\n           +'  <div class=\"col-xs-9 cg-btn-row\">'+ai[x][0]+'</div>'\n           +'  <div class=\"col-xs-3\">'\n           +'    <button analysisId=\"'+ai[x][0]+'\" analysisStatus=\"'+sts+'\" class=\"btn-patch-analysis btn pull-right btn-'+clr+'\">'\n           +'      '+sts+' : Click to change <div class=\"label glyphicon glyphicon-'+ico+'\"></div>'\n           +'    </button>'\n           +'  </div>'\n           +'</div>';\n        $(\"#AnalysisBody\").append(out);\n        \n    }\n    \n    $(\".btn-patch-analysis\").unbind()\n    .click(function(){\n        var btn = $(this),\n            analysisId = btn.attr(\"analysisId\"),\n            analysisStatus = btn.attr(\"analysisStatus\");\n        patchAnalysis(btn,analysisId);\n    });\n    \n    \n}",
       "type": "JavaScript"
      },
      {
