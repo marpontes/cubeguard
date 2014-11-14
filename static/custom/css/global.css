@@ -1,5 +1,5 @@
 body {
-  background-color:#D4D7D9;
+  background-color:#EBEDEE;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 200;
 }
@@ -9,6 +9,15 @@ body {
   font-size:24px;
   clear:both;
   padding-left:15px;
+  margin-top:20px;
+}
+
+.page-subtitle{
+  line-height:40px;
+  font-size:20px;
+  clear:both;
+  padding-left:15px;
+  margin-top:40px;
 }
 
 .solid-line{
@@ -18,6 +27,12 @@ body {
 .green-line{
 	border-color:#5cb85c;
 }
+
+.gray-line{
+	border-color:#ccc;
+}
+
+
 
 .panel-heading {
   font-size:20px;
@@ -41,7 +56,7 @@ body {
 }
 
 .cg-btn-row-border {
-  border-bottom:solid 1px #D4D7D9;
+  border-bottom:solid 1px #EBEDEE;
 }
 
 .spacer-10{
@@ -60,3 +75,39 @@ button.btn div.label{
   display:inline;
 }
 
+
+
+.arrow-toggle .icon-arrow-down,
+.arrow-toggle.collapsed .icon-arrow-up {
+    display: none;
+}
+.arrow-toggle.collapsed .icon-arrow-down,
+.arrow-toggle .icon-arrow-up {
+    display: inline-block;
+    float:right;
+}
+
+.btn-datasource-wrapper{
+    width:100%;
+    overflow:auto;
+}
+
+label.btn-datasource-choice{
+    width:100%;
+    border-radius: 0px;
+    margin:0px;
+    margin-left:0px;
+    text-align:left;
+}
+
+.btn-datasource-wrapper .btn-datasource-choice + .btn-datasource-choice{
+    margin-left: 0px;
+}
+
+.btn-datasource-choice div.glyphicon{
+    display:none;
+} 
+
+.btn-datasource-choice.active div.glyphicon{
+    display:inline;
+} 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type='text/javascript' src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script type='text/javascript' src="js/DatasourceModel.js"></script>
+	<script type='text/javascript' src="js/DatasourceView.js"></script>
+	<script type='text/javascript' src="js/DatasourceController.js"></script>
+	<script type='text/javascript' src="js/DatasourceEvent.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+
+</head>
+<style type='text/css'>
+body{
+	margin:40px;
+}
+
+</style>
+<body>
+	<div id="DatasourcesListing"></div>
+
+</body>
+<script language="javascript">
+
+
+var datasources = {
+	"SampleData" : {
+		analysisId : "SampleData",
+		dynamicEnabled : true,
+		endpoint : "testEndpoint.ktr",
+		endpointType : "tables"
+	},
+	"SteelWheels" : {
+		analysisId : "SteelWheels",
+		dynamicEnabled : false,
+		endpoint : "testEndpoint.ktr",
+		endpointType : "tables"
+	},
+	"pentaho_operations_mart" : {
+		analysisId : "pentaho_operations_mart",
+		dynamicEnabled : true,
+		endpoint : "teste",
+		endpointType : "XML"
+	}
+};
+
+function bootstrapper() {
+	var controller = new DatasourceController;
+	for(datasource in datasources){
+		controller.loadView(datasource);
+	}
+}
+
+bootstrapper();
+</script>
+
+</html>

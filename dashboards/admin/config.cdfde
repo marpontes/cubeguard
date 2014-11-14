@@ -3,19 +3,134 @@
   "title": "config",
   "rows": [
    {
-    "id": "718ebbf9-4751-0404-7e99-2a2221ca9d25",
+    "id": "10fd3322-9ba4-77b0-a4f7-f2c9fda2ed87",
     "type": "LayoutResourceFile",
     "typeDesc": "Resource",
     "parent": "UnIqEiD",
     "properties": [
      {
       "name": "name",
-      "value": "JSHelpers",
+      "value": "LayoutView",
       "type": "Id"
      },
      {
       "name": "resourceFile",
-      "value": "${system:/static/custom/js/helpers.js}",
+      "value": "${system:/static/custom/js/LayoutView.js}",
+      "type": "ResourceFile"
+     },
+     {
+      "name": "resourceType",
+      "value": "Javascript",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "ffa9d7b7-d487-0805-2006-6bd6b94e9330",
+    "type": "LayoutResourceFile",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "DatasourceModel",
+      "type": "Id"
+     },
+     {
+      "name": "resourceFile",
+      "value": "${system:/static/custom/js/DatasourceModel.js}",
+      "type": "ResourceFile"
+     },
+     {
+      "name": "resourceType",
+      "value": "Javascript",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "e4e68394-39e2-9622-b26a-1098f61f58cd",
+    "type": "LayoutResourceFile",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "DatasourceView",
+      "type": "Id"
+     },
+     {
+      "name": "resourceFile",
+      "value": "${system:/static/custom/js/DatasourceView.js}",
+      "type": "ResourceFile"
+     },
+     {
+      "name": "resourceType",
+      "value": "Javascript",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "1f6baf81-45e5-7d62-9c31-d7013cd61951",
+    "type": "LayoutResourceFile",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "DatasourceController",
+      "type": "Id"
+     },
+     {
+      "name": "resourceFile",
+      "value": "${system:/static/custom/js/DatasourceController.js}",
+      "type": "ResourceFile"
+     },
+     {
+      "name": "resourceType",
+      "value": "Javascript",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "36c855ea-4c83-b4c5-680c-acf832852ba6",
+    "type": "LayoutResourceFile",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "DatasourceEvent",
+      "type": "Id"
+     },
+     {
+      "name": "resourceFile",
+      "value": "${system:/static/custom/js/DatasourceEvent.js}",
+      "type": "ResourceFile"
+     },
+     {
+      "name": "resourceType",
+      "value": "Javascript",
+      "type": "Label"
+     }
+    ]
+   },
+   {
+    "id": "daf3117e-8251-fb0d-6f02-dbae1c8890cb",
+    "type": "LayoutResourceFile",
+    "typeDesc": "Resource",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "AnalysisBootstrapper",
+      "type": "Id"
+     },
+     {
+      "name": "resourceFile",
+      "value": "${system:/static/custom/js/AnalysisBootstrapper.js}",
       "type": "ResourceFile"
      },
      {
@@ -89,7 +204,7 @@
      },
      {
       "name": "html",
-      "value": "CubeGuard ",
+      "value": "Cubeguard ",
       "type": "Html"
      },
      {
@@ -728,71 +843,38 @@
     ]
    },
    {
-    "id": "2b188871-463e-57c3-f6cb-b240bde42f5f",
-    "type": "BootstrapPanel",
-    "typeDesc": "Bootstrap Panel",
+    "id": "880d34d6-0aa0-8714-dffd-4a1af830962d",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
     "parent": "UnIqEiD",
     "properties": [
      {
       "name": "name",
-      "value": "DSConfigPanel",
+      "value": "DatasourcesListingLabel",
       "type": "Id"
      },
      {
-      "name": "height",
-      "value": "",
-      "type": "Integer"
-     },
-     {
-      "name": "roundCorners",
-      "value": "",
-      "type": "RoundCorners"
-     },
-     {
       "name": "cssClass",
-      "value": "",
+      "value": "page-subtitle text-info",
       "type": "String"
      },
      {
-      "name": "bootstrapPanelStyle",
-      "value": "panel-default",
-      "type": "bootstrapPanelStyleCustom"
+      "name": "elementTag",
+      "value": "div",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
      }
     ]
    },
    {
-    "id": "fd0caed2-8775-a3d6-2226-38b6bec50558",
-    "type": "BootstrapPanelHeader",
-    "typeDesc": "Panel Header",
-    "parent": "2b188871-463e-57c3-f6cb-b240bde42f5f",
-    "properties": [
-     {
-      "name": "name",
-      "value": "",
-      "type": "Id"
-     },
-     {
-      "name": "roundCorners",
-      "value": "",
-      "type": "RoundCorners"
-     },
-     {
-      "name": "textAlign",
-      "value": "",
-      "type": "TextAlign"
-     },
-     {
-      "name": "cssClass",
-      "value": "",
-      "type": "String"
-     }
-    ]
-   },
-   {
-    "id": "5cb36a4a-e319-f5af-a1bb-f3137645a8d3",
+    "id": "acdcc50f-3fef-2fd5-2fdb-a15ad637f5d5",
     "type": "LayoutHtml",
     "typeDesc": "Html",
-    "parent": "fd0caed2-8775-a3d6-2226-38b6bec50558",
+    "parent": "880d34d6-0aa0-8714-dffd-4a1af830962d",
     "properties": [
      {
       "name": "name",
@@ -801,7 +883,7 @@
      },
      {
       "name": "html",
-      "value": "Datasources using dynamic security ",
+      "value": "Analysis data sources ",
       "type": "Html"
      },
      {
@@ -822,30 +904,86 @@
     ]
    },
    {
-    "id": "adc1f94e-51d0-287d-67aa-e9e3562d0fee",
-    "type": "BootstrapPanelBody",
-    "typeDesc": "Panel Body",
-    "parent": "2b188871-463e-57c3-f6cb-b240bde42f5f",
+    "id": "4b6453b5-f0a1-501f-75e7-bf6ebd4db4fc",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "UnIqEiD",
     "properties": [
      {
       "name": "name",
-      "value": "AnalysisBody",
+      "value": "DatasourceListingLine",
       "type": "Id"
      },
      {
-      "name": "roundCorners",
-      "value": "",
-      "type": "RoundCorners"
+      "name": "cssClass",
+      "value": "page-line gray-line cg-no-margin",
+      "type": "String"
      },
      {
-      "name": "textAlign",
-      "value": "",
-      "type": "TextAlign"
+      "name": "elementTag",
+      "value": "hr",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "46b85667-6f55-fe00-8baa-6c30df879f7a",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "DatasourceListingSpace",
+      "type": "Id"
      },
      {
       "name": "cssClass",
-      "value": "cg-no-padding",
+      "value": "spacer-10",
       "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "div",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "ba83f1fb-d0f3-f2bd-ba08-05bf6d390bbe",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "DatasourcesListing",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "div",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
      }
     ]
    },
@@ -902,6 +1040,67 @@
       "name": "otherAttributes",
       "value": "[[\"src\",\"/pentaho/plugin/pentaho-cdf-dd/api/resources/system/cubeguard/static/custom/img/oncase-logo.png\"],[\"align\",\"right\"],[\"border\",\"0\"]]",
       "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "a3c074af-37a2-367d-b44c-362b7aa8abb9",
+    "type": "LayoutFreeForm",
+    "typeDesc": "FreeForm",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "Spacer",
+      "type": "Id"
+     },
+     {
+      "name": "cssClass",
+      "value": "page-title",
+      "type": "String"
+     },
+     {
+      "name": "elementTag",
+      "value": "div",
+      "type": "String"
+     },
+     {
+      "name": "otherAttributes",
+      "value": "[]",
+      "type": "OptionArray"
+     }
+    ]
+   },
+   {
+    "id": "562a34b7-aa0c-8bc0-e059-7f21c87f9552",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "a3c074af-37a2-367d-b44c-362b7aa8abb9",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "<br />&nbsp; ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
      }
     ]
    }
@@ -1147,7 +1346,7 @@
      },
      {
       "name": "postExecution",
-      "value": "function(){\n    \n    var ai = analysisInfoRS;\n    \n    $(\"#AnalysisBody\").empty();\n    \n    for(var x=0;x<ai.length;x++){\n        \n        var ico = ai[x][1] ? \"ok\" : \"minus\",\n            clr = ai[x][1] ? \"success\" : \"warning\",\n            sts = ai[x][1] ? \"Dynamic\" : \"Not dynamic\",\n            lne = x == ai.length-1 ? \"\": \"cg-btn-row-border\";\n        \n        var out='<div class=\"row cg-btn-row-space '+lne+'\">'\n           +'  <div class=\"col-xs-9 cg-btn-row\">'+ai[x][0]+'</div>'\n           +'  <div class=\"col-xs-3\">'\n           +'    <button analysisId=\"'+ai[x][0]+'\" analysisStatus=\"'+sts+'\" class=\"btn-patch-analysis btn pull-right btn-'+clr+'\">'\n           +'      '+sts+' : Click to change <div class=\"label glyphicon glyphicon-'+ico+'\"></div>'\n           +'    </button>'\n           +'  </div>'\n           +'</div>';\n        $(\"#AnalysisBody\").append(out);\n        \n    }\n    \n    $(\".btn-patch-analysis\").unbind()\n    .click(function(){\n        var btn = $(this),\n            analysisId = btn.attr(\"analysisId\"),\n            analysisStatus = btn.attr(\"analysisStatus\");\n        patchAnalysis(btn,analysisId);\n    });\n    \n    \n}",
+      "value": "function(){\n\n    datasources = {};\n\n    var ai = analysisInfoRS;\n\n    $(\"#AnalysisBody\").empty();\n\n    for(var x=0;x<ai.length;x++){\n        datasources[ai[x][0]] = {\n            \"analysisId\" : ai[x][0],\n            dynamicEnabled : ai[x][1],\n            endpoint : ai[x][2],\n            endpointType : ai[x][3]\n        }; \n    }\n    bootstrapper();\n\n}",
       "type": "JavaScript"
      },
      {
@@ -1353,7 +1552,7 @@
      },
      {
       "name": "javaScript",
-      "value": "$(function(){\n   $(\"#RefreshButton\").click(function(){\n       location.reload();\n   });\n});",
+      "value": "$(function(){\n   $(\"#RefreshButton\").click(function(){\n       location.reload();\n   });\n});\n\nvar datasources;",
       "type": "JavaScript"
      }
     ]

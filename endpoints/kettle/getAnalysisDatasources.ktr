@@ -280,8 +280,8 @@
   <hop> <from>vars eval</from><to>OUTPUT</to><enabled>Y</enabled> </hop>
   </order>
   <step>
-    <name>dummy</name>
-    <type>DataGrid</type>
+    <name>OUTPUT</name>
+    <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -290,26 +290,27 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <fields>
-      <field>
-        <name>quantity</name>
-        <type>integer</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <set_empty_string>N</set_empty_string>
-      </field>
-    </fields>
-    <data>
-      <line> <item>1</item> </line>
-    </data>
-     <cluster_schema/>
+    <fields>      <field>        <name>analysisId</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>isPatched</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>endpoint</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>endpointType</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>32</xloc>
-      <yloc>48</yloc>
+      <xloc>944</xloc>
+      <yloc>208</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -325,7 +326,7 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <serverUrl>http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080&#x2f;pentaho</serverUrl>
+    <serverUrl>http&#x3a;&#x2f;&#x2f;localhost&#x3a;8081&#x2f;pentaho</serverUrl>
     <userName>admin</userName>
     <password>password</password>
     <isBypassingAuthentication>Y</isBypassingAuthentication>
@@ -348,144 +349,6 @@
     </step>
 
   <step>
-    <name>datasources ids</name>
-    <type>getXMLData</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <include>N</include>
-    <include_field/>
-    <rownum>N</rownum>
-    <addresultfile>N</addresultfile>
-    <namespaceaware>N</namespaceaware>
-    <ignorecomments>N</ignorecomments>
-    <readurl>N</readurl>
-    <validating>N</validating>
-    <usetoken>N</usetoken>
-    <IsIgnoreEmptyFile>N</IsIgnoreEmptyFile>
-    <doNotFailIfNoFile>Y</doNotFailIfNoFile>
-    <rownum_field/>
-    <encoding>UTF-8</encoding>
-    <file>
-      <name/>
-      <filemask/>
-      <exclude_filemask/>
-      <file_required>N</file_required>
-      <include_subfolders>N</include_subfolders>
-    </file>
-    <fields>
-      <field>
-        <name>Item</name>
-        <xpath>.</xpath>
-        <element_type>node</element_type>
-        <result_type>valueof</result_type>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-      </field>
-    </fields>
-    <limit>0</limit>
-    <loopxpath>&#x2f;List&#x2f;Item</loopxpath>
-    <IsInFields>Y</IsInFields>
-    <IsAFile>N</IsAFile>
-    <XmlField>result</XmlField>
-    <prunePath/>
-    <shortFileFieldName/>
-    <pathFieldName/>
-    <hiddenFieldName/>
-    <lastModificationTimeFieldName/>
-    <uriNameFieldName/>
-    <rootUriNameFieldName/>
-    <extensionFieldName/>
-    <sizeFieldName/>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>416</xloc>
-      <yloc>48</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>project</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <fields>      <field>        <name>Item</name>
-        <rename>analysisId</rename>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>dspClass</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>        <select_unspecified>N</select_unspecified>
-    </fields>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>544</xloc>
-      <yloc>48</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>vars for new EP query</name>
-    <type>Janino</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-       <formula><field_name>epModule</field_name>
-<formula_string>&#x22;data-access&#x22;</formula_string>
-<value_type>String</value_type>
-<value_length>-1</value_length>
-<value_precision>-1</value_precision>
-<replace_field/>
-</formula>
-       <formula><field_name>epPath</field_name>
-<formula_string>&#x22;&#x2f;datasource&#x2f;&#x22;&#x2b;analysisId&#x2b;&#x22;&#x2f;getAnalysisDatasourceInfo&#x22;</formula_string>
-<value_type>String</value_type>
-<value_length>-1</value_length>
-<value_precision>-1</value_precision>
-<replace_field/>
-</formula>
-       <formula><field_name>epMethod</field_name>
-<formula_string>&#x22;GET&#x22;</formula_string>
-<value_type>String</value_type>
-<value_length>-1</value_length>
-<value_precision>-1</value_precision>
-<replace_field/>
-</formula>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>672</xloc>
-      <yloc>48</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
     <name>analysis properties</name>
     <type>CallEndpointStep</type>
     <description/>
@@ -496,7 +359,7 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <serverUrl>http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080&#x2f;pentaho</serverUrl>
+    <serverUrl>http&#x3a;&#x2f;&#x2f;localhost&#x3a;8081&#x2f;pentaho</serverUrl>
     <userName>admin</userName>
     <password>password</password>
     <isBypassingAuthentication>Y</isBypassingAuthentication>
@@ -513,36 +376,6 @@
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>832</xloc>
-      <yloc>48</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>vars eval</name>
-    <type>ScriptValueMod</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <compatible>N</compatible>
-    <optimizationLevel>9</optimizationLevel>
-    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
-        <jsScript_name>Script 1</jsScript_name>
-        <jsScript_script>&#x2f;&#x2f;Script here&#xa;&#xa;var DynamicSchemaProcessor &#x3d; &#x22;-&#x22;&#x3b;&#xa;var dsp &#x3d; &#x27;DynamicSchemaProcessor&#x3d;&#x22;&#x27;&#x3b;&#xa;if&#x28;vars.indexOf&#x28;dsp&#x29;&#x3e;0&#x29;&#x7b;&#xa;	DynamicSchemaProcessor &#x3d; vars.substring&#x28;vars.indexOf&#x28;dsp&#x29;&#x2b;dsp.length&#x29;&#x3b;&#xa;	DynamicSchemaProcessor &#x3d; DynamicSchemaProcessor.substring&#x28;0,DynamicSchemaProcessor.indexOf&#x28;&#x27;&#x22;&#x27;&#x29;&#x29;&#xa;&#x7d;&#xa;&#xa;var isPatched &#x3d; DynamicSchemaProcessor.equals&#x28;dspClass&#x29;&#x3b;</jsScript_script>
-      </jsScript>    </jsScripts>    <fields>      <field>        <name>isPatched</name>
-        <rename>isPatched</rename>
-        <type>Boolean</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <replace>N</replace>
-      </field>    </fields>     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>944</xloc>
       <yloc>48</yloc>
       <draw>Y</draw>
       </GUI>
@@ -626,8 +459,8 @@
     </step>
 
   <step>
-    <name>only dspClass</name>
-    <type>Denormaliser</type>
+    <name>datasources ids</name>
+    <type>getXMLData</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -636,29 +469,96 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-      <key_field>Key</key_field>
-      <group>
-        </group>
-      <fields>
-        <field>
-          <field_name>Value</field_name>
-          <key_value>cubeguard.dspClass</key_value>
-          <target_name>dspClass</target_name>
-          <target_type>String</target_type>
-          <target_format/>
-          <target_length>-1</target_length>
-          <target_precision>-1</target_precision>
-          <target_decimal_symbol/>
-          <target_grouping_symbol/>
-          <target_currency_symbol/>
-          <target_null_string/>
-          <target_aggregation_type>-</target_aggregation_type>
-          </field>
-        </fields>
+    <include>N</include>
+    <include_field/>
+    <rownum>N</rownum>
+    <addresultfile>N</addresultfile>
+    <namespaceaware>N</namespaceaware>
+    <ignorecomments>N</ignorecomments>
+    <readurl>N</readurl>
+    <validating>N</validating>
+    <usetoken>N</usetoken>
+    <IsIgnoreEmptyFile>N</IsIgnoreEmptyFile>
+    <doNotFailIfNoFile>Y</doNotFailIfNoFile>
+    <rownum_field/>
+    <encoding>UTF-8</encoding>
+    <file>
+      <name/>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+    <fields>
+      <field>
+        <name>Item</name>
+        <xpath>.</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+    </fields>
+    <limit>0</limit>
+    <loopxpath>&#x2f;List&#x2f;Item</loopxpath>
+    <IsInFields>Y</IsInFields>
+    <IsAFile>N</IsAFile>
+    <XmlField>result</XmlField>
+    <prunePath/>
+    <shortFileFieldName/>
+    <pathFieldName/>
+    <hiddenFieldName/>
+    <lastModificationTimeFieldName/>
+    <uriNameFieldName/>
+    <rootUriNameFieldName/>
+    <extensionFieldName/>
+    <sizeFieldName/>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>160</xloc>
-      <yloc>128</yloc>
+      <xloc>416</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>dummy</name>
+    <type>DataGrid</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>quantity</name>
+        <type>integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <data>
+      <line> <item>1</item> </line>
+    </data>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>32</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -695,7 +595,73 @@
     </step>
 
   <step>
-    <name>OUTPUT</name>
+    <name>only dspClass</name>
+    <type>Denormaliser</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <key_field>Key</key_field>
+      <group>
+        </group>
+      <fields>
+        <field>
+          <field_name>Value</field_name>
+          <key_value>cubeguard.dspClass</key_value>
+          <target_name>dspClass</target_name>
+          <target_type>String</target_type>
+          <target_format/>
+          <target_length>-1</target_length>
+          <target_precision>-1</target_precision>
+          <target_decimal_symbol/>
+          <target_grouping_symbol/>
+          <target_currency_symbol/>
+          <target_null_string/>
+          <target_aggregation_type>-</target_aggregation_type>
+          </field>
+        <field>
+          <field_name>Value</field_name>
+          <key_value>cubeguard.defaultEndpointName</key_value>
+          <target_name>defaultEndpointName</target_name>
+          <target_type>String</target_type>
+          <target_format/>
+          <target_length>-1</target_length>
+          <target_precision>-1</target_precision>
+          <target_decimal_symbol/>
+          <target_grouping_symbol/>
+          <target_currency_symbol/>
+          <target_null_string/>
+          <target_aggregation_type>-</target_aggregation_type>
+          </field>
+        <field>
+          <field_name>Value</field_name>
+          <key_value>cubeguard.defaultEndpointType</key_value>
+          <target_name>defaultEndpointType</target_name>
+          <target_type>String</target_type>
+          <target_format/>
+          <target_length>-1</target_length>
+          <target_precision>-1</target_precision>
+          <target_decimal_symbol/>
+          <target_grouping_symbol/>
+          <target_currency_symbol/>
+          <target_null_string/>
+          <target_aggregation_type>-</target_aggregation_type>
+          </field>
+        </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>160</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>project</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -705,19 +671,109 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <fields>      <field>        <name>analysisId</name>
+    <fields>      <field>        <name>Item</name>
+        <rename>analysisId</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dspClass</name>
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
-      </field>      <field>        <name>isPatched</name>
+      </field>      <field>        <name>defaultEndpointName</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>defaultEndpointType</name>
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
       </field>        <select_unspecified>N</select_unspecified>
     </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>544</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>vars eval</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xa;&#xa;var DynamicSchemaProcessor &#x3d; &#x22;-&#x22;&#x3b;&#xa;var dsp &#x3d; &#x27;DynamicSchemaProcessor&#x3d;&#x22;&#x27;&#x3b;&#xa;var endpointAttribute &#x3d; &#x27;EndpointName&#x3d;&#x22;&#x27;&#x3b;&#xa;var endpointTypeAttribute &#x3d; &#x27;EndpointType&#x3d;&#x22;&#x27;&#x3b;&#xa;var endpoint &#x3d; null&#x3b;&#xa;var endpointType &#x3d; null&#x3b;&#xa;&#xa;if&#x28;vars.indexOf&#x28;dsp&#x29;&#x3e;0&#x29;&#x7b;&#xa;	DynamicSchemaProcessor &#x3d; vars.substring&#x28;vars.indexOf&#x28;dsp&#x29;&#x2b;dsp.length&#x29;&#x3b;&#xa;	DynamicSchemaProcessor &#x3d; DynamicSchemaProcessor.substring&#x28;0,DynamicSchemaProcessor.indexOf&#x28;&#x27;&#x22;&#x27;&#x29;&#x29;&#x3b;&#xa;&#x7d;&#xa;&#xa;if&#x28;vars.indexOf&#x28;endpointAttribute&#x29;&#x3e;0&#x29;&#x7b;&#xa;	endpoint &#x3d; vars.substring&#x28;vars.indexOf&#x28;endpointAttribute&#x29;&#x2b;endpointAttribute.length&#x29;&#x3b;&#xa;	endpoint &#x3d; endpoint.substring&#x28;0,endpoint.indexOf&#x28;&#x27;&#x22;&#x27;&#x29;&#x29;&#x3b;&#xa;&#x7d;&#xa;&#xa;if&#x28;vars.indexOf&#x28;endpointTypeAttribute&#x29;&#x3e;0&#x29;&#x7b;&#xa;	endpointType &#x3d; vars.substring&#x28;vars.indexOf&#x28;endpointTypeAttribute&#x29;&#x2b;endpointTypeAttribute.length&#x29;&#x3b;&#xa;	endpointType &#x3d; endpointType.substring&#x28;0,endpointType.indexOf&#x28;&#x27;&#x22;&#x27;&#x29;&#x29;&#x3b;&#xa;&#x7d;&#xa;&#xa;&#x2f;&#x2a;&#xa;endpoint &#x3d; &#x28;endpoint &#x3d;&#x3d; null&#x29; &#x3f; defaultEndpointName &#x3a; endpoint&#x3b;&#xa;endpointType &#x3d; &#x28;endpointType &#x3d;&#x3d; null&#x29; &#x3f; defaultEndpointType &#x3a; endpointType&#x3b;&#xa;&#x2a;&#x2f;&#xa;&#xa;var isPatched &#x3d; DynamicSchemaProcessor.equals&#x28;dspClass&#x29;&#x3b;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>isPatched</name>
+        <rename>isPatched</rename>
+        <type>Boolean</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>endpoint</name>
+        <rename>endpoint</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>endpointType</name>
+        <rename>endpointType</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>944</xloc>
-      <yloc>208</yloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>vars for new EP query</name>
+    <type>Janino</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+       <formula><field_name>epModule</field_name>
+<formula_string>&#x22;data-access&#x22;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>epPath</field_name>
+<formula_string>&#x22;&#x2f;datasource&#x2f;&#x22;&#x2b;analysisId&#x2b;&#x22;&#x2f;getAnalysisDatasourceInfo&#x22;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>epMethod</field_name>
+<formula_string>&#x22;GET&#x22;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>672</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -728,10 +784,6 @@
 </slave-step-copy-partition-distribution>
    <slave_transformation>N</slave_transformation>
 <attributes><group><name>DataService</name>
-<attribute><key>name</key>
-<value/>
-</attribute><attribute><key>stepname</key>
-<value/>
-</attribute></group></attributes>
+</group></attributes>
 
 </transformation>
