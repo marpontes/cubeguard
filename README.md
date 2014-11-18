@@ -28,6 +28,8 @@ Cubeguard can be installed following the steps:
 
 When the server is restarted for the second time and the plugin have its classes loaded, you are then able to configure, for each of your Analysis Schemas, the usage of ktr sources for your security layer.
 
+**Important:** With this version of the plugin you still need to define into your XML schema, one Role [name=Authenticated] with any schema grant. Cubeguard will work by replacing that role. The reason behind that is that the RoleMapper will need to tell mondrian which roles to load from the xml schema. That will be solved in the future.
+
 For each of your Schemas, you have the opportunity to configure:
 
 * [Enabled to use dynamic security?] - Whether it's going or not to use the plugin and its dynamic security;
