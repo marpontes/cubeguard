@@ -15,7 +15,7 @@ Key Advantages
 
 You can refer to [this Youtube video](http://youtu.be/pfYemaR_5hU) to see a screencast that demonstrtes installation and configuration processes.
 
-Cubeguard is available at Pentaho Marketplace. If you still don't have Marketplace installed in your Pentaho Server, just navigate to http://community.pentaho.com/, find Marketplace there and follow the instructions.
+Cubeguard ~~is available~~ at Pentaho Marketplace. If you still don't have Marketplace installed in your Pentaho Server, just navigate to http://community.pentaho.com/, find Marketplace there and follow the instructions.
 
 Cubeguard can be installed following the steps:
 
