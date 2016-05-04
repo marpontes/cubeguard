@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>getCustomAccessRulesTest</name>
+    <name>getAccessRulesImpeachment</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -75,6 +75,11 @@
             <description>The webapp folder. This value is automatically set at runtime if &#x27;&#x23;&#x27; is removed from variable name.</description>
         </parameter>
         <parameter>
+            <name>catalogName</name>
+            <default_value>SteelWheels</default_value>
+            <description/>
+        </parameter>
+        <parameter>
             <name>cpk.response.kettleOutput</name>
             <default_value>SingleCell</default_value>
             <description>The output format to be used by default. Possible values&#x3a; Infered, Json, SingleCell, ResultFiles, ResultOnly. Remove &#x27;&#x23;&#x27; to use variable.</description>
@@ -83,11 +88,6 @@
             <name>cpk.session.username</name>
             <default_value>admin</default_value>
             <description>The username that is executing this transformation. This value is automatically set at runtime if &#x27;&#x23;&#x27; is removed from variable name.</description>
-        </parameter>
-        <parameter>
-            <name>dataSource</name>
-            <default_value>SteelWheels</default_value>
-            <description/>
         </parameter>
     </parameters>
     <log>
@@ -150,128 +150,11 @@
   <created_date>2014&#x2f;10&#x2f;21 10&#x3a;40&#x3a;03.574</created_date>
   <modified_user>-</modified_user>
   <modified_date>2014&#x2f;10&#x2f;21 10&#x3a;40&#x3a;03.574</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA&#x3d;</key_for_session_key>
+    <is_key_private>N</is_key_private>
   </info>
   <notepads>
   </notepads>
-  <connection>
-    <name>AgileBI</name>
-    <server>localhost</server>
-    <type>MONETDB</type>
-    <access>Native</access>
-    <database>pentaho-instaview</database>
-    <port>50006</port>
-    <username>monetdb</username>
-    <password>Encrypted 2be98afc86aa7f2e4cb14a17edb86abd8</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <read_only>true</read_only>
-    <attributes>
-      <attribute><code>EXTRA_OPTION_INFOBRIGHT.characterEncoding</code><attribute>UTF-8</attribute></attribute>
-      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
-      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
-      <attribute><code>PORT_NUMBER</code><attribute>50006</attribute></attribute>
-      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
-      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
-      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
-    </attributes>
-  </connection>
-  <connection>
-    <name>DDW_DESENV</name>
-    <server/>
-    <type>VERTICA5</type>
-    <access>JNDI</access>
-    <database>DDW_DESENV</database>
-    <port>1521</port>
-    <username/>
-    <password>Encrypted </password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
-      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
-      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
-      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
-      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
-      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
-      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
-    </attributes>
-  </connection>
-  <connection>
-    <name>DODS_DESENV</name>
-    <server/>
-    <type>POSTGRESQL</type>
-    <access>JNDI</access>
-    <database>DODS_DESENV</database>
-    <port>1521</port>
-    <username/>
-    <password>Encrypted </password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
-      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
-      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
-      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
-      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
-      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
-      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
-    </attributes>
-  </connection>
-  <connection>
-    <name>DORA_DESENV</name>
-    <server>1.0.0.88</server>
-    <type>ORACLE</type>
-    <access>JNDI</access>
-    <database>DORA_DESENV</database>
-    <port>1521</port>
-    <username/>
-    <password>Encrypted </password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
-      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
-      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
-      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
-      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
-      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
-      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
-    </attributes>
-  </connection>
-  <connection>
-    <name>postgres_local</name>
-    <server>localhost</server>
-    <type>POSTGRESQL</type>
-    <access>Native</access>
-    <database>postgres</database>
-    <port>5432</port>
-    <username>postgres</username>
-    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
-    <servername/>
-    <data_tablespace/>
-    <index_tablespace/>
-    <attributes>
-      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
-      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
-      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
-      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
-      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
-      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
-      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
-      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
-    </attributes>
-  </connection>
   <order>
   <hop> <from>Hierarchies&#x2f;Measures to be denied</from><to>DENIED_HIERARCHIES</to><enabled>Y</enabled> </hop>
   <hop> <from>DENIED_HIERARCHIES</from><to>come</to><enabled>Y</enabled> </hop>
@@ -279,10 +162,14 @@
   <hop> <from>ALLOWED_HIERARCHIES</from><to>come</to><enabled>Y</enabled> </hop>
   <hop> <from>cubes to be denied</from><to>DENIED_CUBES</to><enabled>Y</enabled> </hop>
   <hop> <from>DENIED_CUBES</from><to>come</to><enabled>Y</enabled> </hop>
-  <hop> <from>Java Filter</from><to>OUTPUT</to><enabled>Y</enabled> </hop>
   <hop> <from>Java Filter</from><to>getout</to><enabled>Y</enabled> </hop>
-  <hop> <from>current user&#x2f;schema</from><to>Java Filter</to><enabled>Y</enabled> </hop>
   <hop> <from>come</from><to>current user&#x2f;schema</to><enabled>Y</enabled> </hop>
+  <hop> <from>SchemaGrantAll</from><to>SCHEMA_GRANT_ALL</to><enabled>Y</enabled> </hop>
+  <hop> <from>SCHEMA_GRANT_ALL</from><to>come</to><enabled>Y</enabled> </hop>
+  <hop> <from>Java Filter</from><to>AFTER-FILTER</to><enabled>Y</enabled> </hop>
+  <hop> <from>AFTER-FILTER</from><to>OUTPUT</to><enabled>Y</enabled> </hop>
+  <hop> <from>current user&#x2f;schema</from><to>BEFORE-FILTER</to><enabled>Y</enabled> </hop>
+  <hop> <from>BEFORE-FILTER</from><to>Java Filter</to><enabled>Y</enabled> </hop>
   </order>
   <step>
     <name>ALLOWED_HIERARCHIES</name>
@@ -452,7 +339,7 @@
       </field>
     </fields>
     <data>
-      <line> <item>admin</item><item>SteelWheels</item><item>SteelWheelsSales</item><item>&#x5b;Markets&#x5d;</item><item>&#x5b;Markets&#x5d;.&#x5b;NA&#x5d;</item> </line>
+      <line> <item>suzy</item><item>Camara</item><item>Impeachment</item><item>&#x5b;Sigla&#x5d;</item><item>&#x5b;Sigla&#x5d;.&#x5b;PT&#x5d;</item> </line>
     </data>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
@@ -552,9 +439,9 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-<send_true_to>OUTPUT</send_true_to>
+<send_true_to>AFTER-FILTER</send_true_to>
 <send_false_to>getout</send_false_to>
-<condition>User &#x21;&#x3d; null &#x26;&#x26; SchemaName &#x21;&#x3d; null &#x26;&#x26; User.equals&#x28;cpk_username&#x29; &#x26;&#x26; SchemaName.equals&#x28;dataSource&#x29;&#xa;</condition>
+<condition>User &#x21;&#x3d; null &#x26;&#x26; SchemaName &#x21;&#x3d; null &#x26;&#x26; &#xa;&#xa;User.toLowerCase&#x28;&#x29;.equals&#x28;cpk_username.toLowerCase&#x28;&#x29;&#x29; &#x26;&#x26; &#xa;&#xa;SchemaName.toLowerCase&#x28;&#x29;.equals&#x28;catalogName.toLowerCase&#x28;&#x29;&#x29;&#xa;</condition>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>816</xloc>
@@ -577,6 +464,174 @@
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>816</xloc>
+      <yloc>384</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>SCHEMA_GRANT_ALL</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>Cube</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>N</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>Hierarachy</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>N</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>Member</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>N</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>TYPE</name>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>3</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>400</xloc>
+      <yloc>464</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>SchemaGrantAll</name>
+    <type>DataGrid</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>User</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>SchemaName</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <data>
+      <line> <item>pat</item><item>Camara</item> </line>
+      <line> <item>admin</item><item>Camara</item> </line>
+    </data>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>160</xloc>
+      <yloc>464</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>AFTER-FILTER</name>
+    <type>WriteToLog</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <loglevel>log_level_basic</loglevel>
+      <displayHeader>Y</displayHeader>
+      <limitRows>N</limitRows>
+      <limitRowsNumber>0</limitRowsNumber>
+      <logmessage/>
+    <fields>
+      </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>928</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>BEFORE-FILTER</name>
+    <type>WriteToLog</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <loglevel>log_level_basic</loglevel>
+      <displayHeader>Y</displayHeader>
+      <limitRows>N</limitRows>
+      <limitRowsNumber>0</limitRowsNumber>
+      <logmessage/>
+    <fields>
+      </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>688</xloc>
       <yloc>352</yloc>
       <draw>Y</draw>
       </GUI>
@@ -705,8 +760,8 @@
         <trim_type>both</trim_type>
       </field>
       <field>
-        <name>dataSource</name>
-        <variable>&#x24;&#x7b;dataSource&#x7d;</variable>
+        <name>catalogName</name>
+        <variable>&#x24;&#x7b;catalogName&#x7d;</variable>
         <type>String</type>
         <format/>
         <currency/>
