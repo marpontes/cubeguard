@@ -34,6 +34,10 @@ var DatasourceModel = function ( data ) {
     this.defaultEndpointName = "getcustomaccessrules";
     this.defaultEndpointType = "resultset"
 
+    //add by @fernandommota
+    //get the root web app name dynamically
+    this.rootWebApp = location.pathname.split('/')[1];
+
 	return this;
 };
 
@@ -53,7 +57,7 @@ DatasourceModel.find = function ( analysisId ) {
 DatasourceModel.prototype.getAnalysisParams = function(){
 
 	var analysisId = this.analysisId;
-	var url = "/pentaho/plugin/data-access/api/datasource/"+analysisId
+	var url = "/"+this.rootWebApp + "/plugin/data-access/api/datasource/"+analysisId
 		+"/getAnalysisDatasourceInfo";
 	var params = null;
 	
@@ -132,7 +136,7 @@ DatasourceModel.prototype.getNewEndpointParams = function(params,attrName,newVal
 DatasourceModel.prototype.setNewDSPParams = function(newParams){
 
 	var analysisId = this.analysisId;
-	var url = "/pentaho/plugin/data-access/api/mondrian/postAnalysis";	
+	var url = "/"+this.rootWebApp + "/plugin/data-access/api/mondrian/postAnalysis";	
 	var data = new FormData();
 	    data.append("uploadAnalysis","");
 	    data.append("catalogName",analysisId);
@@ -225,7 +229,7 @@ DatasourceModel.prototype.endpointTypeChosenHandler = function(_obj,newEndpointT
 
 DatasourceModel.prototype.getEndpointsList = function(){
 
-	var url = "/pentaho/plugin/cubeguard/api/elementsList";
+	var url = "/"+this.rootWebApp + "/plugin/cubeguard/api/elementsList";
 	var endpoints = [];
 	
 	$.ajax({
