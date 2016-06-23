@@ -5,8 +5,8 @@
          <Jndi></Jndi>
       </Connection>
    </DataSources>
-   <DataAccess access="public" cache="true" cacheDuration="3600" connection="dummy" id="dummy"
-               type="sql">
+   <DataAccess access="public" connection="dummy" id="dummy" type="sql">
+      <Cache duration="3600" enabled="true"/>
       <Columns/>
       <Parameters/>
       <Query></Query>

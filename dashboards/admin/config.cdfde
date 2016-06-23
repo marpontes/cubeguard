@@ -1140,7 +1140,7 @@
      },
      {
       "name": "parameters",
-      "value": "[]",
+      "value": "[[\"rootWebApp\",\"rootWebApp\"]]",
       "type": "ValuesArray"
      },
      {
@@ -1526,6 +1526,34 @@
     ]
    },
    {
+    "id": "78459678-f69c-2119-a0b6-bfe8e2a3f8ac",
+    "type": "ComponentsJavascriptParameter",
+    "typeDesc": "Custom parameter",
+    "parent": "GENERIC",
+    "properties": [
+     {
+      "name": "name",
+      "value": "rootWebApp",
+      "type": "Id"
+     },
+     {
+      "name": "javaScript",
+      "value": "location.pathname.split('/')[1] ",
+      "type": "JavaScript"
+     },
+     {
+      "name": "parameterViewRole",
+      "value": "unused",
+      "type": "parameterViewRoleCustom"
+     },
+     {
+      "name": "bookmarkable",
+      "value": "false",
+      "type": "Boolean"
+     }
+    ]
+   },
+   {
     "id": "SCRIPT",
     "name": "Scripts",
     "type": "Label",
@@ -1610,6 +1638,16 @@
       "type": "CdaParameters"
      },
      {
+      "name": "cdacalculatedcolumns",
+      "value": "[]",
+      "type": "CdaCalculatedColumnsArray"
+     },
+     {
+      "name": "cdacolumns",
+      "value": "[]",
+      "type": "CdaColumnsArray"
+     },
+     {
       "name": "output",
       "value": "[]",
       "type": "IndexArray"
@@ -1620,14 +1658,9 @@
       "type": "OutputMode"
      },
      {
-      "name": "cdacolumns",
+      "name": "cacheKeys",
       "value": "[]",
-      "type": "CdaColumnsArray"
-     },
-     {
-      "name": "cdacalculatedcolumns",
-      "value": "[]",
-      "type": "CdaCalculatedColumnsArray"
+      "type": "CacheKeysValues"
      },
      {
       "name": "cacheDuration",
